@@ -1,4 +1,18 @@
-body {
+.outer {
+    background-image: url('https://t4.ftcdn.net/jpg/00/68/25/59/240_F_68255967_fiw2f8UjHwaHJOcMF4wHuMdaKAzhwyvS.jpg');
+    width:420px;
+    height:365px;
+}
+.inner {
+    position: relative;
+    background-color:;
+    left: 67px;
+    top: 109px;
+    width:277px;
+    height:150px;
+}
+
+/*body {
     margin: 60px auto;
     width: 70%;
 }
@@ -25,7 +39,7 @@ h1 {
 }
 p {
     font-size: 1.5em;
-    line-height: 1.4em;
+    line-height: 1.4em;*/
     color: #333;
 }
 footer {
