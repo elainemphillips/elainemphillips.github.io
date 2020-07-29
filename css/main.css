@@ -1,15 +1,15 @@
 .outer {
     background-image: url('https://t4.ftcdn.net/jpg/00/68/25/59/240_F_68255967_fiw2f8UjHwaHJOcMF4wHuMdaKAzhwyvS.jpg');
-    width:1200px;
-    height:1095px;
+    width:1300px;
+    height:2000px;
 }
 .inner {
     position: relative;
     background-color:;
     left: 67px;
     top: 109px;
-    width:500px;
-    height:600px;
+    width:50%;
+    height:25%;
 }
 
 /*body {
