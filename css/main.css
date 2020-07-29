@@ -1,7 +1,7 @@
 .outer {
     background-image: url('https://t4.ftcdn.net/jpg/00/68/25/59/240_F_68255967_fiw2f8UjHwaHJOcMF4wHuMdaKAzhwyvS.jpg');
-    width:100%;
-    height:100%;
+    width:1200px;
+    height:1095px;
 }
 .inner {
     position: relative;
