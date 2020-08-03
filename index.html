@@ -8,36 +8,36 @@
   text-align: center;
   border: none;/*2px solid #d3d3d3;*/
   overflow: hidden;
+  width: 800px;
+  height: 900px;
 }
 
-#myframe {
+.myframe {
   position: relative;
   z-index: 0;
   left: -19px;
   top: -29px;
-  width: 750px;
-  height: 850px;
+  width: 800px;
+  height: 900px;
   pointer-events: none;
   overflow: hidden;
 }
 
 body {
   background-image: url('https://thumbs.dreamstime.com/b/corkboard-texture-design-usage-61455861.jpg');
+  background-size: 2946px 1967px; /* height/iframe_height = 24 inches/11 inches
+  so height = 24/11*900px = 2541 px to be 2 ft tall. no 1967
+  And width is 3ft/2ft*height=3812 pixels. */
 }
 </style>
 <body>
 
-<h1>Draggable DIV Element</h1>
+<h1>Drag-and-drop Corkboard Resources</h1>
 
-<p>Click and hold the mouse button down while moving the DIV element</p>
+<p>Click and hold the mouse button down while moving the papers</p>
 
 <div id="mydiv">
-  <iframe id ="myframe" src ="https://docs.google.com/document/d/1cjT9U3o8u2489cIJrIcSoBIkr9qsECa6ffF6kpG1Y4c?rm=minimal" draggable ="true" scrolling="no"></iframe>
-  <!--<img src ="https://neal.fun/thumbnails/paper.png" width="200" height="100">-->
-  <!--<div>Click here to move</div>
-  <p>Move</p>
-  <p>this</p>
-  <p>DIV</p>-->
+  <iframe class="myframe" src ="https://docs.google.com/document/d/1cjT9U3o8u2489cIJrIcSoBIkr9qsECa6ffF6kpG1Y4c?rm=minimal" draggable ="true" scrolling="no"></iframe>
 </div>
 
 <script>
