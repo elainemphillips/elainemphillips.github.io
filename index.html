@@ -4,17 +4,21 @@
 #mydiv {
   position: absolute;
   z-index: 9;
-  background-color: #f1f1f1;
+  background-color: #2196F3;
   text-align: center;
-  border: 1px solid #d3d3d3;
+  border: 2px solid #d3d3d3;
+  overflow: hidden;
 }
 
-#mydivheader {
-  padding: 10px;
-  cursor: move;
-  z-index: 10;
-  background-color: #2196F3;
-  color: #fff;
+#myframe {
+  position: relative;
+  z-index: 0;
+  left: -19px;
+  top: -29px;
+  width: 750px;
+  height: 850px;
+  pointer-events: none;
+  overflow: hidden;
 }
 </style>
 <body>
@@ -24,12 +28,14 @@
 <p>Click and hold the mouse button down while moving the DIV element</p>
 
 <div id="mydiv">
-  <div>Click here to move</div>
+  <iframe id ="myframe" src ="https://docs.google.com/document/d/1cjT9U3o8u2489cIJrIcSoBIkr9qsECa6ffF6kpG1Y4c?rm=minimal" draggable ="true" scrolling="no"></iframe>
+  <!--<img src ="https://neal.fun/thumbnails/paper.png" width="200" height="100">-->
+  <!--<div>Click here to move</div>
   <p>Move</p>
   <p>this</p>
-  <p>DIV</p>
+  <p>DIV</p>-->
 </div>
-	
+
 <script>
 //Make the DIV element draggagle:
 dragElement(document.getElementById("mydiv"));
@@ -78,30 +84,3 @@ function dragElement(elmnt) {
 
 </body>
 </html>
-
-<!--<html>
-  <head>
-    <title>My Homepage</title>
-    <!-- link to main stylesheet --
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-  </head>
-
-
-  <body>
-    <h1>DivEd Corkboard Mockup</h1>
-    
-    <h2>
-        Will add draggability and embed google docs soon
-    </h2>
-    <div class="outer">
-      <!--<iframe class="inner" scrolling="no" width='75%' height='50%' src="https://docs.google.com/document/d/e/2PACX-1vTKROrPfq5gXN66iupEM9ORoAgRlQg6Vcm9ivdDqTW0dPGVlo8szuSotZuATJm2tqOSLbFNATI6uOHk/pub?embedded=true">
-      </iframe>--
-      <iframe class ="inner" scrolling="no" width='75%' height='50%' src="https://docs.google.com/document/d/e/2PACX-1vQNCi0RsTRzob6UxnC5XSlYDsfHLKjl72hcZOUmo0TJZmjvawYzcrC-HboTNXZcl_rSpZOViPMIXGTh/pub?embedded=true">
-      </iframe>
-    </div>
-    <div class="outer">
-      <iframe class="inner" scrolling="no" width='75%' height='50%' src="https://docs.google.com/document/d/e/2PACX-1vRpF7I_UvAGCq-HbgmDusOU81LvaNBLJlndRJWmoRN1XYw2uQ9-nL25KKY0fu4dFDp63KGAOsIlmcCu/pub?embedded=true"></iframe>
-    </div>
-    
-  </body>
-</html>-->
