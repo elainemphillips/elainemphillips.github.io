@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <style>
-.mydiv {
+#mydiv {
   position: absolute;
   z-index: 9;
   background-color: transparent;/*use transparent instead of hex color*/
@@ -12,7 +12,7 @@
   height: 900px;
 }
 
-.myframe {
+#myframe {
   position: relative;
   z-index: 0;
   left: -21px;
@@ -38,8 +38,8 @@ body {
 
 <p>Click and hold the mouse button down while moving the papers</p>
 
-<div class="mydiv">
-  <iframe class="myframe" src ="https://docs.google.com/document/d/1cjT9U3o8u2489cIJrIcSoBIkr9qsECa6ffF6kpG1Y4c?rm=minimal" draggable ="true" scrolling="no"></iframe>
+<div id="mydiv">
+  <iframe id="myframe" src ="https://docs.google.com/document/d/1cjT9U3o8u2489cIJrIcSoBIkr9qsECa6ffF6kpG1Y4c?rm=minimal" draggable ="true" scrolling="no"></iframe>
 </div>
 
 <script>
