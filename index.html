@@ -11,8 +11,7 @@
   width: 816px;
   height: 900px;
 }
-
-  #mydiv2 {
+#mydiv2 {
   position: absolute;
   z-index: 9;
   background-color: transparent;/*use transparent instead of hex color*/
@@ -22,9 +21,9 @@
   width: 816px;
   height: 900px;
   left: 1000px;
-  top: 1000px;
+  top: 0px;
 }
-  
+
 .myframe {
   position: relative;
   z-index: 0;
@@ -35,7 +34,7 @@
   pointer-events: none;
   overflow: hidden;
 }
-  
+
 body {
   background-image: url('https://thumbs.dreamstime.com/b/corkboard-texture-design-usage-61455861.jpg');
   background-size: 2946px 1967px; /* height/iframe_height = 24 inches/11 inches
@@ -54,13 +53,15 @@ body {
 <div id="mydiv1">
   <iframe class="myframe" src ="https://docs.google.com/document/d/1cjT9U3o8u2489cIJrIcSoBIkr9qsECa6ffF6kpG1Y4c?rm=minimal" draggable ="true" scrolling="no"></iframe>
 </div>
+
 <div id="mydiv2">
-  <iframe class="myframe" src ="https://docs.google.com/document/d/1-jwO1HHfwfXbObrrBajKrgUeqWBAGqFvYsvdc2NXKxQ?rm=minimal" draggable ="true" scrolling="no"></iframe>
+  <iframe class="myframe" src ="https://docs.google.com/document/d/e/2PACX-1vQNCi0RsTRzob6UxnC5XSlYDsfHLKjl72hcZOUmo0TJZmjvawYzcrC-HboTNXZcl_rSpZOViPMIXGTh/pub?embedded=true?rm=minimal" draggable ="true" scrolling="no"></iframe>
 </div>
-  
+
 <script>
 //Make the DIV element draggagle:
-dragElement(document.getElementById("mydiv"));
+dragElement(document.getElementById("mydiv1"));
+dragElement(document.getElementById("mydiv2"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
