@@ -19,7 +19,7 @@
   border: none;/*2px solid #d3d3d3;*/
   overflow: hidden;
   width: 816px;
-  height: 900px;
+  height: 100px;
   left: 1000px;
   top: 0px;
 }
@@ -69,12 +69,19 @@ body {
 <div id="mydiv2">
   <iframe class="myframe" src ="https://docs.google.com/document/d/2PACX-1vQNCi0RsTRzob6UxnC5XSlYDsfHLKjl72hcZOUmo0TJZmjvawYzcrC-HboTNXZcl_rSpZOViPMIXGTh/pub?embedded=true?rm=minimal" draggable ="true" scrolling="no"></iframe>
 </div>
-<img src ="EHOT.jpg" draggable ="true">
+
+<div id="mydiv3">
+  <img src ="EHOT.jpg" draggable ="true">
+</div>
+
+
 
 <script>
 //Make the DIV element draggagle:
 dragElement(document.getElementById("mydiv1"));
 dragElement(document.getElementById("mydiv2"));
+dragElement(document.getElementById("mydiv3"));
+  
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
