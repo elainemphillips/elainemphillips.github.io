@@ -25,18 +25,7 @@
   top: 1000px;
 }
   
-#myframe1 {
-  position: relative;
-  z-index: 0;
-  left: -21px;
-  top: -29px;
-  width: 880px;
-  height: 900px;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-#myframe2 {
+.myframe {
   position: relative;
   z-index: 0;
   left: -21px;
@@ -63,10 +52,10 @@ body {
 <p>Click and hold the mouse button down while moving the papers</p>
 
 <div id="mydiv1">
-  <iframe id="myframe1" src ="https://docs.google.com/document/d/1cjT9U3o8u2489cIJrIcSoBIkr9qsECa6ffF6kpG1Y4c?rm=minimal" draggable ="true" scrolling="no"></iframe>
+  <iframe class="myframe" src ="https://docs.google.com/document/d/1cjT9U3o8u2489cIJrIcSoBIkr9qsECa6ffF6kpG1Y4c?rm=minimal" draggable ="true" scrolling="no"></iframe>
 </div>
 <div id="mydiv2">
-  <iframe id="myframe2" src ="https://docs.google.com/document/d/1-jwO1HHfwfXbObrrBajKrgUeqWBAGqFvYsvdc2NXKxQ?rm=minimal" draggable ="true" scrolling="no"></iframe>
+  <iframe class="myframe" src ="https://docs.google.com/document/d/1-jwO1HHfwfXbObrrBajKrgUeqWBAGqFvYsvdc2NXKxQ?rm=minimal" draggable ="true" scrolling="no"></iframe>
 </div>
   
 <script>
